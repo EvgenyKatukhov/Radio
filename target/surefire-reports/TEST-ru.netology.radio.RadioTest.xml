@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.radio.RadioTest" time="0.554" tests="14" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.radio.RadioTest" time="0.661" tests="14" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Users\user\.jdks\temurin-11.0.14\bin"/>
-    <property name="sun.java.command" value="C:\Users\user\AppData\Local\Temp\surefire16634909011002228623\surefirebooter12820382177751225529.jar C:\Users\user\AppData\Local\Temp\surefire16634909011002228623 2022-03-26T20-22-31_275-jvmRun1 surefire17866887688201338956tmp surefire_010591518491103055539tmp"/>
+    <property name="sun.java.command" value="C:\Users\user\AppData\Local\Temp\surefire5682412056170239144\surefirebooter5581737115316444296.jar C:\Users\user\AppData\Local\Temp\surefire5682412056170239144 2022-03-27T21-17-29_272-jvmRun1 surefire14365224442247165567tmp surefire_08344903073935344610tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\user\IdeaProjects\Rafio1\target\test-classes;C:\Users\user\IdeaProjects\Rafio1\target\classes;C:\Users\user\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.0\junit-jupiter-5.7.0.jar;C:\Users\user\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\user\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\user\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\user\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\user\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\user\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\user\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\user\AppData\Local\Temp\surefire16634909011002228623\surefirebooter12820382177751225529.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\user\AppData\Local\Temp\surefire5682412056170239144\surefirebooter5581737115316444296.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.14+9"/>
@@ -61,18 +61,18 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="volumeUpCurrentVolume" classname="ru.netology.radio.RadioTest" time="0.313"/>
-  <testcase name="volumeDownCurrentVolume" classname="ru.netology.radio.RadioTest" time="0"/>
+  <testcase name="volumeUpCurrentVolume" classname="ru.netology.radio.RadioTest" time="0.118"/>
+  <testcase name="volumeDownCurrentVolume" classname="ru.netology.radio.RadioTest" time="0.017"/>
   <testcase name="incorrectMinValueSetCurrentStation" classname="ru.netology.radio.RadioTest" time="0"/>
   <testcase name="pushNextRadioStation" classname="ru.netology.radio.RadioTest" time="0"/>
-  <testcase name="incorrectMaxValueSetCurrentStation" classname="ru.netology.radio.RadioTest" time="0"/>
+  <testcase name="incorrectMaxValueSetCurrentStation" classname="ru.netology.radio.RadioTest" time="0.016"/>
   <testcase name="volumeDoubleDownCurrentVolume" classname="ru.netology.radio.RadioTest" time="0"/>
-  <testcase name="pushDoublePrevRadioStation" classname="ru.netology.radio.RadioTest" time="0"/>
-  <testcase name="setCurrentVolume" classname="ru.netology.radio.RadioTest" time="0.013"/>
-  <testcase name="setCurrentStation" classname="ru.netology.radio.RadioTest" time="0.011"/>
-  <testcase name="pushPrevRadioStation" classname="ru.netology.radio.RadioTest" time="0.005"/>
-  <testcase name="volumeDoubleUpCurrentVolume" classname="ru.netology.radio.RadioTest" time="0.008"/>
-  <testcase name="pushDoubleNextRadioStation" classname="ru.netology.radio.RadioTest" time="0.003"/>
-  <testcase name="incorrectMaxValueSetCurrentVolume" classname="ru.netology.radio.RadioTest" time="0.011"/>
-  <testcase name="incorrectMinValueSetCurrentVolume" classname="ru.netology.radio.RadioTest" time="0.003"/>
+  <testcase name="pushDoublePrevRadioStation" classname="ru.netology.radio.RadioTest" time="0.015"/>
+  <testcase name="setCurrentVolume" classname="ru.netology.radio.RadioTest" time="0"/>
+  <testcase name="setCurrentStation" classname="ru.netology.radio.RadioTest" time="0.016"/>
+  <testcase name="pushPrevRadioStation" classname="ru.netology.radio.RadioTest" time="0"/>
+  <testcase name="volumeDoubleUpCurrentVolume" classname="ru.netology.radio.RadioTest" time="0.203"/>
+  <testcase name="pushDoubleNextRadioStation" classname="ru.netology.radio.RadioTest" time="0.016"/>
+  <testcase name="incorrectMaxValueSetCurrentVolume" classname="ru.netology.radio.RadioTest" time="0"/>
+  <testcase name="incorrectMinValueSetCurrentVolume" classname="ru.netology.radio.RadioTest" time="0"/>
 </testsuite>

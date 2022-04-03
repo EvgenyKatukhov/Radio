@@ -1,8 +1,9 @@
 package ru.netology.radio;
 
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RadioTest {
 
@@ -13,7 +14,7 @@ class RadioTest {
 
         station.setCurrentStation(expected);
 
-        Assertions.assertEquals(expected, station.getCurrentStation());
+        assertEquals(expected, station.getCurrentStation());
     }
 
     @Test
@@ -23,7 +24,7 @@ class RadioTest {
 
         station.setCurrentStation(-1);
 
-        Assertions.assertEquals(expected, station.getCurrentStation());
+        assertEquals(expected, station.getCurrentStation());
     }
 
     @Test
@@ -33,7 +34,7 @@ class RadioTest {
 
         station.setCurrentStation(10);
 
-        Assertions.assertEquals(expected, station.getCurrentStation());
+        assertEquals(expected, station.getCurrentStation());
     }
 
     @Test
@@ -44,7 +45,7 @@ class RadioTest {
 
         int expected = 0;
 
-        Assertions.assertEquals(expected, station.getCurrentStation());
+        assertEquals(expected, station.getCurrentStation());
     }
 
     @Test
@@ -56,7 +57,7 @@ class RadioTest {
 
         int expected = 1;
 
-        Assertions.assertEquals(expected, station.getCurrentStation());
+        assertEquals(expected, station.getCurrentStation());
     }
 
     @Test
@@ -68,7 +69,7 @@ class RadioTest {
 
         int expected = 9;
 
-        Assertions.assertEquals(expected, station.getCurrentStation());
+        assertEquals(expected, station.getCurrentStation());
     }
 
     @Test
@@ -81,7 +82,7 @@ class RadioTest {
 
         int expected = 0;
 
-        Assertions.assertEquals(expected, station.getCurrentStation());
+        assertEquals(expected, station.getCurrentStation());
     }
 
     @Test
@@ -91,7 +92,7 @@ class RadioTest {
 
         station.setCurrentVolume(expected);
 
-        Assertions.assertEquals(expected, station.getCurrentVolume());
+        assertEquals(expected, station.getCurrentVolume());
     }
 
     @Test
@@ -101,7 +102,7 @@ class RadioTest {
 
         station.setCurrentVolume(0);
 
-        Assertions.assertEquals(expected, station.getCurrentVolume());
+        assertEquals(expected, station.getCurrentVolume());
     }
 
     @Test
@@ -111,7 +112,7 @@ class RadioTest {
 
         station.setCurrentVolume(-1);
 
-        Assertions.assertEquals(expected, station.getCurrentVolume());
+        assertEquals(expected, station.getCurrentVolume());
     }
 
     @Test
@@ -121,18 +122,18 @@ class RadioTest {
 
         station.increaseCurrentVolume();
 
-        Assertions.assertEquals(station.getMaxVolume(), station.getCurrentVolume());
+        assertEquals(station.getMaxVolume(), station.getCurrentVolume());
     }
 
     @Test
     void volumeDoubleUpCurrentVolume() {
         Radio station = new Radio();
-        station.setCurrentVolume(99);
+        station.setCurrentVolume(100);
 
         station.increaseCurrentVolume();
         station.increaseCurrentVolume();
 
-        Assertions.assertEquals(station.getMaxVolume(), station.getCurrentVolume());
+        assertEquals(station.getMaxVolume(), station.getCurrentVolume());
     }
 
     @Test
@@ -142,7 +143,7 @@ class RadioTest {
 
         station.decreaseCurrentVolume();
 
-        Assertions.assertEquals(station.getMinVolume(), station.getCurrentVolume());
+        assertEquals(station.getMinVolume(), station.getCurrentVolume());
     }
 
     @Test
@@ -153,7 +154,7 @@ class RadioTest {
         station.decreaseCurrentVolume();
         station.decreaseCurrentVolume();
 
-        Assertions.assertEquals(station.getMinVolume(), station.getCurrentVolume());
+        assertEquals(station.getMinVolume(), station.getCurrentVolume());
     }
 
     @Test
@@ -164,9 +165,8 @@ class RadioTest {
         station.decreaseCurrentVolume();
         station.decreaseCurrentVolume();
 
-        Assertions.assertEquals(station.getMinVolume(), station.getCurrentVolume());
+        assertEquals(station.getMinVolume(), station.getCurrentVolume());
 
-        org.junit.jupiter.api.Assertions Assertions;
     }
 }
 

@@ -99,7 +99,7 @@ class RadioTest {
         Radio station = new Radio();
         int expected = station.getCurrentVolume();
 
-        station.setCurrentVolume(100);
+        station.setCurrentVolume(0);
 
         Assertions.assertEquals(expected, station.getCurrentVolume());
     }
@@ -117,7 +117,7 @@ class RadioTest {
     @Test
     void volumeUpCurrentVolume() {
         Radio station = new Radio();
-        station.setCurrentVolume(10);
+        station.setCurrentVolume(100);
 
         station.increaseCurrentVolume();
 
@@ -127,7 +127,7 @@ class RadioTest {
     @Test
     void volumeDoubleUpCurrentVolume() {
         Radio station = new Radio();
-        station.setCurrentVolume(9);
+        station.setCurrentVolume(99);
 
         station.increaseCurrentVolume();
         station.increaseCurrentVolume();
